@@ -282,6 +282,24 @@ a {
     color: var(--red);
 }
 
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.social a {
+    font-size: 20px;
+    color: var(--gray);
+    padding: 5px;
+}
+
+.social a:hover {
+    color: var(--red)
+}
+
 /* Responsive */
 
 /* Tablet device and up */
