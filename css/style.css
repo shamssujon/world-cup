@@ -1,7 +1,7 @@
 :root {
     --dark: #161616;
-    --light: #E8E8E8;
-    --gray: #B9B9B9;
+    --light: #e8e8e8;
+    --gray: #b9b9b9;
     --red: crimson;
     --dark-red: #b30f2f;
 }
@@ -112,6 +112,10 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+.header-image img {
+    max-height: 500px;
 }
 
 .live-icon {
@@ -302,7 +306,7 @@ a {
 }
 
 .social a:hover {
-    color: var(--red)
+    color: var(--red);
 }
 
 /* Match */
@@ -438,6 +442,10 @@ a {
 
     .header-content {
         padding: 100px 50px 100px 100px;
+    }
+
+    .header-image img {
+        max-height: 600px;
     }
 
     .main .container {
