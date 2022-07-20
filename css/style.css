@@ -181,14 +181,17 @@ a {
 
 /* Blog */
 .blogs,
-.matches {
+.matches,
+.groups {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 24px;
 }
 
 .blog,
-.match-card {
+.match-card,
+.group-card,
+.group-card {
     border: 1px solid var(--light);
     border-radius: 10px;
     overflow: hidden;
@@ -311,9 +314,13 @@ a {
 .flags {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 20px;
+}
+
+.flags img {
+    max-width: 30%;
 }
 
 .flags span {
@@ -328,6 +335,33 @@ a {
     opacity: 0.8;
 }
 
+/* Groups */
+.group-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.group-teams {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.group-team {
+    background: var(--light);
+    border-radius: 5px;
+    text-align: left;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30px 50px 1fr;
+    gap: 10px;
+    padding: 15px;
+}
+
+.team-flag {
+    width: 90%;
+    border: 1px solid var(--gray);
+}
 
 /* Responsive */
 
@@ -358,7 +392,8 @@ a {
     }
 
     .blogs,
-    .matches {
+    .matches,
+    .groups {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -413,7 +448,6 @@ a {
     .matches {
         grid-template-columns: repeat(3, 1fr);
     }
-
 
     .footer {
         padding: 5rem 0;
